@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_name_game"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/sintitulo_01"
+        />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:textColor="#ffffff"
+        android:background="#ff0080"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/iv_name_game"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Start"
+        />
+
+    <Button
+        android:id="@+id/btn_top_scorers"
+        android:textColor="#ffffff"
+        android:background="#ff0080"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Top Scorers"
+        />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:textColor="#ffffff"
+        android:background="#ff0080"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_top_scorers"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Exit"
+        />
+
+
+</RelativeLayout>
