@@ -1,4 +1,4 @@
-package com.example.myappforshootergame;
+package com.example.nightmares;
 
 import org.junit.Test;
 

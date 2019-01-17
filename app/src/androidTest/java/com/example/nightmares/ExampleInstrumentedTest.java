@@ -1,4 +1,4 @@
-package com.example.myappforshootergame;
+package com.example.nightmares;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

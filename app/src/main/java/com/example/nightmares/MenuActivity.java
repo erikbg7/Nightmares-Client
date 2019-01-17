@@ -1,4 +1,4 @@
-package com.example.myappforshootergame;
+package com.example.nightmares;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
