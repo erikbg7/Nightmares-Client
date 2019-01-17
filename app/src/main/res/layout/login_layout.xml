@@ -13,10 +13,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
         android:contentDescription="@null"
-        app:srcCompat="@drawable/student_02" />
+        app:srcCompat="@drawable/user_icon" />
 
     <EditText
-        android:id="@+id/et_email"
+        android:id="@+id/Name"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_below="@+id/iv_user"
@@ -25,31 +25,29 @@
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_action_name"
         android:ems="10"
-        android:inputType="textEmailAddress"
-        android:contentDescription="@null"
+        android:inputType="text"
         android:textColor="#ffffff" />
 
     <EditText
-        android:id="@+id/et_password"
+        android:id="@+id/Password"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_alignLeft="@+id/et_email"
-        android:layout_alignStart="@+id/et_email"
-        android:layout_below="@+id/et_email"
+        android:layout_alignLeft="@+id/Name"
+        android:layout_alignStart="@+id/Name"
+        android:layout_below="@+id/Name"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="#11000000"
         android:drawableLeft="@drawable/icon_password"
         android:ems="10"
         android:inputType="textPassword"
-        android:contentDescription="@null"
         android:textColor="#ffffff" />
 
     <Button
         android:id="@+id/btn_login"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/et_password"
+        android:layout_below="@+id/Password"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:contentDescription="@null"

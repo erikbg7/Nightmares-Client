@@ -52,8 +52,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        name = (EditText) findViewById(R.id.et_email);
-        password = (EditText) findViewById(R.id.et_password);
+        name = (EditText) findViewById(R.id.Name);
+        password = (EditText) findViewById(R.id.Password);
         btnLogin = (Button) findViewById(R.id.btn_login);
         tvRegister = (TextView) findViewById(R.id.tv_register);
 
@@ -76,15 +76,11 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LogSignTemplate credentials = new LogSignTemplate(name.toString(), password.toString());
+                LogSignTemplate credentials = new LogSignTemplate(name.getText().toString(), password.getText().toString());
                 logIn(credentials);
-                /*de momento sin comprobar si ese usuario esta en base datos solo y unicamente acceder cualquiera solo con darle boton*/
-                //Intent i2 = new Intent(LoginActivity.this, MenuActivity.class);
-                //startActivity(i2);
-
             }
         });
-        
+
     }
 
 
@@ -97,14 +93,13 @@ public class LoginActivity extends AppCompatActivity {
 
     // CALL para hacer un POST de login con las credenciales del usuario
     private void logIn(LogSignTemplate credentials){
-        //LogSignTemplate credentials = new LogSignTemplate("Tfue", "123");
         Call<LogSignTemplate> callNewTrack = nightAPI.authorize(credentials);
         callNewTrack.enqueue(new Callback<LogSignTemplate>() {
             @Override
             public void onResponse(Call<LogSignTemplate> call, Response<LogSignTemplate> response) {
                 if(response.isSuccessful()){
                     Log.d("QuestionsCallback", "////////////////////////////////////   SUCCESFUL LOGIN !!!!!!!!!!!!!!!  /////////////////////////////////////");
-                   // Toasty.success(getContext(), "Succes, welcome.", Toast.LENGTH_SHORT, true).show();
+                    Toasty.success(getContext(), "Succes, welcome.", Toast.LENGTH_SHORT, true).show();
                     Intent intent = new Intent(getContext(), MenuActivity.class);
                     startActivity(intent);
                 }
@@ -117,9 +112,10 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<LogSignTemplate> call, Throwable t) {
                 Log.d("QuestionsCallback", "////////////////////////////////////////   ERROR   /////////////////////////////////");
-               // Toasty.error(getContext(), "Error while validating..", Toast.LENGTH_SHORT, true).show();
+                Toasty.error(getContext(), "Error while validating..", Toast.LENGTH_SHORT, true).show();
                 t.printStackTrace();
             }
         });
     }
 }
+
