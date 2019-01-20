@@ -5,6 +5,8 @@ package com.example.nightmares.activities;
 //import com.example.*;
 //import com.unity3d.player.UnityPlayerActivity;
 //import dsa.UPC.Nightgame;
+import com.upc.nightgame.UnityPlayerActivity;
+
 
 import android.content.Context;
 import android.content.Intent;
@@ -49,8 +51,8 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //Intent intent = new Intent(myContext, UnityPlayerActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(myContext, UnityPlayerActivity.class);
+                startActivity(intent);
 
             }
         });

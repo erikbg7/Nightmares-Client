@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     buildToolsVersion '28.0.3'
     defaultConfig {
-        applicationId "com.example.myappforshootergame"
+        applicationId "com.example.nightmares"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
@@ -26,10 +26,10 @@ android {
 dependencies {
     //UNITY GAME
     //implementation project(path: ':Nightmares-debug', configuration:'default')
-
+    implementation project(path: ':nightgame', configuration:'default')
 //    implementation project(':nightgame-debug')
-
-    implementation project(':Nightmares-debug')
+    //implementation project(path: ':nightgame')
+    //implementation project(':Nightmares-debug')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:28.0.0-alpha1'
