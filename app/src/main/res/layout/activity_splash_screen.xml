@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_03"
-    tools:context=".SplashScreen">
+    tools:context=".utils.SplashScreen">
 
     <include
         layout="@layout/splash_screen_layout"

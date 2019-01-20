@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 28
+    buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId "com.example.myappforshootergame"
         minSdkVersion 21
@@ -16,9 +17,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
 }
 
 dependencies {
+    //UNITY GAME
+    //implementation project(path: ':Nightmares-debug', configuration:'default')
+
+//    implementation project(':nightgame-debug')
+
+    implementation project(':Nightmares-debug')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:28.0.0-alpha1'
@@ -38,6 +49,7 @@ dependencies {
 
     //TOASTY Library
     implementation 'com.github.GrenderG:Toasty:1.3.1'
+
 
 
 }

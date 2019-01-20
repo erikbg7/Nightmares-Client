@@ -1,4 +1,4 @@
-package com.example.nightmares;
+package com.example.nightmares.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,9 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.nightmares.R;
+import com.example.nightmares.activities.MenuActivity;
 import com.example.nightmares.models.LogSignTemplate;
 import com.example.nightmares.services.NightAPI;
 

@@ -1,13 +1,22 @@
-package com.example.nightmares;
+package com.example.nightmares.activities;
 
+//import dsa.UPC.Nightgame.UnityPlayerActivity;
+//import unityplayer.UnityActtivity;
+//import com.example.*;
+//import com.unity3d.player.UnityPlayerActivity;
+//import dsa.UPC.Nightgame;
+
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import com.example.nightmares.R;
 
 public class MenuActivity extends AppCompatActivity {
 
+    Context myContext = this;
     Button btnExit;
     Button btnStart;
 
@@ -40,7 +49,8 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                /*iniciar apk*/
+                //Intent intent = new Intent(myContext, UnityPlayerActivity.class);
+                //startActivity(intent);
 
             }
         });

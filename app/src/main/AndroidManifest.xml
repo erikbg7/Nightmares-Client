@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.nightmares">
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -11,13 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.nightmares.LoginActivity">
+        <activity android:name="com.example.nightmares.activities.LoginActivity">
 
         </activity>
-        <activity android:name="com.example.nightmares.RegisterActivity" />
-        <activity android:name="com.example.nightmares.DashboardActivity" />
-        <activity android:name="com.example.nightmares.MenuActivity" />
-        <activity android:name="com.example.nightmares.SplashScreen">
+        <activity android:name="com.example.nightmares.activities.RegisterActivity" />
+        <activity android:name="com.example.nightmares.activities.DashboardActivity" />
+        <activity android:name="com.example.nightmares.activities.MenuActivity" />
+        <activity android:name="com.example.nightmares.utils.SplashScreen">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
