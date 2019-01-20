@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AAAAAAAAAAAAAAAA_NG - Copy.iml" filepath="$PROJECT_DIR$/AAAAAAAAAAAAAAAA_NG - Copy.iml" />
       <module fileurl="file://C:\Users\erikb\IdeaProjects\Nightmares-vFinal\Nightmares-Client.iml" filepath="C:\Users\erikb\IdeaProjects\Nightmares-vFinal\Nightmares-Client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Nightmares-vFinal.iml" filepath="$PROJECT_DIR$/Nightmares-vFinal.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/nightgame/nightgame.iml" filepath="$PROJECT_DIR$/nightgame/nightgame.iml" />
     </modules>

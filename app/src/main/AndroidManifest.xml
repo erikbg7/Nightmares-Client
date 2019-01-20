@@ -38,7 +38,10 @@
             </intent-filter>
             <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
         </activity>
-
+        <activity
+            android:name="com.example.nightmares.activities.ScorersActivity"
+            android:parentActivityName=".activities.MenuActivity">
+        </activity>
     </application>
     <uses-feature android:name="android.software.leanback" android:required="false" />
     <uses-feature android:glEsVersion="0x00020000" />

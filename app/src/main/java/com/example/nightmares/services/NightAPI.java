@@ -6,6 +6,7 @@ package com.example.nightmares.services;
 
 
 import com.example.nightmares.models.LogSignTemplate;
+import com.example.nightmares.models.ScoreTemplate;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -20,7 +21,7 @@ public interface NightAPI {
     @POST("authentication/SignUp")
     Call<LogSignTemplate> register(@Body LogSignTemplate credentials);
 
-    //@GET("users/byScore")
-    //Call<List<ScoreTemplate>> getScoreList();
+    @GET("users/byScore")
+    Call<List<ScoreTemplate>> getScoreList();
 
 }

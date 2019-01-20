@@ -1,10 +1,6 @@
 package com.example.nightmares.activities;
 
-//import dsa.UPC.Nightgame.UnityPlayerActivity;
-//import unityplayer.UnityActtivity;
-//import com.example.*;
-//import com.unity3d.player.UnityPlayerActivity;
-//import dsa.UPC.Nightgame;
+
 import com.upc.nightgame.UnityPlayerActivity;
 
 
@@ -21,6 +17,7 @@ public class MenuActivity extends AppCompatActivity {
     Context myContext = this;
     Button btnExit;
     Button btnStart;
+    Button btnScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +27,15 @@ public class MenuActivity extends AppCompatActivity {
 
         btnStart = (Button) findViewById(R.id.btn_start);
         btnExit = (Button) findViewById(R.id.btn_exit);
+        btnScore = (Button) findViewById(R.id.btn_top_scorers);
 
+        btnScore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(myContext, ScorersActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         btnExit.setOnClickListener(new View.OnClickListener() {
@@ -50,10 +55,8 @@ public class MenuActivity extends AppCompatActivity {
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(myContext, UnityPlayerActivity.class);
                 startActivity(intent);
-
             }
         });
 
